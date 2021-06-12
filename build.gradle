@@ -24,5 +24,7 @@ pitest {
 	//adds dependency to org.pitest:pitest-junit5-plugin and sets "testPlugin" to "junit5"
 	junit5PluginVersion = '0.14'
 	verbose = true
-	mutators = ["ALL"]
+	// line below lets you configure specific mutators
+	// mutators = ["ALL"]
+	mutationThreshold = 50
 }
